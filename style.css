@@ -1,0 +1,40 @@
+body {
+  background-image: '/imagens/bg.gif'
+  color: black;
+  font-family: Verdana;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    text-align: center;
+}
+
+article{
+    display: block;
+    background-color: lightblue;
+    padding: 20vh;
+}
+
+.menu{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-evenly;
+}  
+
+.menu a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.post{
+    background-color: aliceblue;
+    padding: 5vh;
+}
+
+.area1{
+    display: flex;
+    justify-content: space-around;
+}
