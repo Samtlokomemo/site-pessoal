@@ -1,287 +1,264 @@
+/* user styles */
+
+/* styles are what change the color and sizes of stuff on your site. */
+
+/* these are variables that are being used in the code
+these tended to confuse some people, so I only kept 
+the images as variables */
+
+:root {
+    --header-image: url('https://pbs.twimg.com/profile_banners/1002244435021836290/1782324273/1500x500');
+    --body-bg-image: url('https://blob.gifcities.org/gifcities/7QYZXBU4KD6EC2LB52RZ6DLVG5D6U6KS.gif');
+
+    /* colors */
+    --content: #43256E;
+}
+
+/* if you have the URL of a font, you can set it below */
+/* feel free to delete this if it's not your vibe */
+
+/* this seems like a lot for just one font and I would have to agree 
+but I wanted to include an example of how to include a custom font.
+If you download a font file you can upload it onto your Neocities
+and then link it! Many fonts have separate files for each style
+(bold, italic, etc. T_T) which is why there are so many!
+
+*/
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
 body {
-  background-image: url(imagens/bg.gif);
-  color: black;
-  font-family: Verdana;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #08031A;
+    /* you can delete the line below if you'd prefer to not use an image */
+    background-size: 65px;
+    color: #fceaff;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* below this line is CSS for the layout */
+
+/* this is a CSS comment
+to uncomment a line of CSS, remove the * and the /
+before and after the text */
+
+
+/* the "container" is what wraps your entire website */
+/* if you want something (like the header) to be Wider than
+the other elements, you will need to move that div outside
+of the container */
+#container {
+    max-width: 900px;
+    /* this is the width of your layout! */
+    /* if you change the above value, scroll to the bottom
+and change the media query according to the comment! */
+    margin: 0 auto;
+    /* this centers the entire page */
+}
+
+/* the area below is for all links on your page
+EXCEPT for the navigation */
+#container a {
+    color: #ED64F5;
+    font-weight: bold;
+    /* if you want to remove the underline
+you can add a line below here that says:
+text-decoration:none; */
+}
+
+#header {
+    width: 100%;
+    background-color: #5e4e8c;
+    /* header color here! */
+    height: 150px;
+    /* this is only for a background image! */
+    /* if you want to put images IN the header, 
+you can add them directly to the <div id="header"></div> element! */
+    background-image: var(--header-image);
+    background-size: 100%;
+}
+
+/* navigation section!! */
+#navbar {
+    height: 40px;
+    background-color: #13092D;
+    /* navbar color */
+    width: 100%;
 }
 
 #navbar ul {
-  
-  list-style-type:none; /* this removes the bulletpoints */
-  /* there is an annoying left padding in the ul element by default */
-  padding-left:0; /* this removes it */
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
 }
 
+#navbar li {
+    padding-top: 10px;
+}
+
+/* navigation links*/
 #navbar li a {
-  display:inline-block; /* this allows us to add margin to each item 
-                           so there's space for it to rotate */
-  margin:10px;
+    color: #ED64F5;
+    /* navbar text color */
+    font-weight: 800;
+    text-decoration: none;
+    /* this removes the underline */
+
+    display: inline-block;
 }
 
-/* this makes stuff happen when you hover! */
+/* navigation link when a link is hovered over */
 #navbar li a:hover {
-  transform:rotate(-15deg); /* play with this 15deg value, works w/ negatives too! */
-  /* more CSS transform options: https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+    transform:rotate(-15deg); /* play with this 15deg value, works w/ negatives too! */
+    color: #a49cba;
 }
 
-/* user styles */
+#flex {
+    display: flex;
+}
 
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
-            :root {
-                --header-image: url('https://pbs.twimg.com/profile_banners/1002244435021836290/1782324273/1500x500');
-                --body-bg-image: url('https://blob.gifcities.org/gifcities/7QYZXBU4KD6EC2LB52RZ6DLVG5D6U6KS.gif');
-
-                /* colors */
-                --content: #43256E;
-            }
-
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
-
-            body {
-                font-family: 'Nunito', sans-serif;
-                margin: 0;
-                background-color: #08031A;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #fceaff;
-                background-image: var(--body-bg-image);
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
+/* this colors BOTH sidebars
+if you want to style them separately,
+create styles for #leftSidebar and #rightSidebar */
+aside {
+    background-color: #241445;
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+    /* this makes the sidebar text slightly smaller */
+}
 
 
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
-                max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-                margin: 0 auto;
-                /* this centers the entire page */
-            }
+/* this is the color of the main content area,
+between the sidebars! */
+main {
+    background-color: #43256E;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
 
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
-            #container a {
-                color: #ED64F5;
-                font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-            }
+/* what's this "order" stuff about??
+allow me to explain!
+if you're using both sidebars, the "order" value
+tells the CSS the order in which to display them.
+left sidebar is 1, content is 2, and right sidebar is 3! */
 
-            #header {
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
+*/ #leftSidebar {
+    order: 1;
+}
 
-            /* navigation section!! */
-            #navbar {
-                height: 40px;
-                background-color: #13092D;
-                /* navbar color */
-                width: 100%;
-            }
+#rightSidebar {
+    order: 3;
+}
 
-            #navbar ul {
-                display: flex;
-                padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
-            }
+footer {
+    background-color: #13092D;
+    /* background color for footer */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    /* this centers the footer text */
+}
 
-            #navbar li {
-                padding-top: 10px;
-            }
+h1,
+h2,
+h3 {
+    color: #ED64F5;
+}
 
-            /* navigation links*/
-            #navbar li a {
-                color: #ED64F5;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
-            }
+h1 {
+    font-size: 25px;
+}
 
-            /* navigation link when a link is hovered over */
-            #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
-            }
+strong {
+    /* this styles bold text */
+    color: #ED64F5;
+}
 
-            #flex {
-                display: flex;
-            }
+/* this is just a cool box, it's the darker colored one */
+.box {
+    background-color: #13092D;
+    border: 1px solid #ED64F5;
+    padding: 10px;
+}
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                background-color: #241445;
-                width: 200px;
-                padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
-            }
+/* CSS for extras */
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+    background-color: #13092D;
+}
 
 
-            /* this is the color of the main content area,
-    between the sidebars! */
-            main {
-                background-color: #43256E;
-                flex: 1;
-                padding: 20px;
-                order: 2;
-            }
+/* BELOW THIS POINT IS MEDIA QUERY */
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
+/* so you wanna change the width of your page? 
+by default, the container width is 900px.
+in order to keep things responsive, take your new height,
+and then subtrack it by 100. use this new number as the 
+"max-width" value below
+*/
 
-            */ #leftSidebar {
-                order: 1;
-            }
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
 
-            #rightSidebar {
-                order: 3;
-            }
+    aside {
+        width: 100%;
+    }
 
-            footer {
-                background-color: #13092D;
-                /* background color for footer */
-                width: 100%;
-                height: 40px;
-                padding: 10px;
-                text-align: center;
-                /* this centers the footer text */
-            }
+    /* the order of the items is adjusted here for responsiveness!
+since the sidebars would be too small on a mobile device.
+feel free to play around with the order!
+*/
+    main {
+        order: 1;
+    }
 
-            h1,
-            h2,
-            h3 {
-                color: #ED64F5;
-            }
+    #leftSidebar {
+        order: 2;
+    }
 
-            h1 {
-                font-size: 25px;
-            }
+    #rightSidebar {
+        order: 3;
+    }
 
-            strong {
-                /* this styles bold text */
-                color: #ED64F5;
-            }
-
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
-                padding: 10px;
-            }
-
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
-            }
-
-
-            /* BELOW THIS POINT IS MEDIA QUERY */
-
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
-
-            @media only screen and (max-width: 800px) {
-                #flex {
-                    flex-wrap: wrap;
-                }
-
-                aside {
-                    width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
-                    order: 2;
-                }
-
-                #rightSidebar {
-                    order: 3;
-                }
-
-                #navbar ul {
-                    flex-wrap: wrap;
-                }
-            }
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
