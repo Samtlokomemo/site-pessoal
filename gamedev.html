@@ -8,19 +8,8 @@
     <title>GameDev</title>
 </head>
 <body>
-        <div id="container"><div id="header" style="height: 152px;"></div>
-            <div id="headerArea">
-                
-                <nav id="navbar" style="margin-bottom: 10px;">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="gamedev.html">Gamedev</a></li>
-                        <li><a href="https://backloggd.com/u/Samtlokomemo/" target="_blank">Backloggd</a></li>
-                    </ul>
-                </nav>
-            </div>
-
+        <div id="container">
+            <header-info></header-info>
             <div id="flex">
                 <main>
                     <h1 style="text-align: center;">Projetos</h1>
@@ -54,21 +43,21 @@
                     <img src="imagens/Stamps/xd.png" alt="">
 
                     <!-- moon phase -->
-                    <table cellpadding="0" cellspacing="0" border="0" width="128"><tr><td align="center"><a href="https://www.moonconnection.com" target="_blank"><img src="https://www.moonmodule.com/cs/dm/vs.gif" width="128" height="196" border="0" alt="" /></a><div style="position:relative;width:128px;"><div style="position:absolute;top:-20px;left:6px;background:#000000;width:116px;text-align:center;"><a href="https://www.moonconnection.com/moon_phases.phtml" target="mc_moon_ph"><font color="#7F7F7F" size="1" face="arial,helvetica,sans-serif"><span style="color:#7F7F7F;font-family:arial,helvetica,sans-serif;font-size:10px;">moon phase info</span></font></a></div></div></td></tr></table><!-- // end moon phase HTML // -->
+                     <div id="MoonPhase" style="margin-top: 10px; text-align: center;">
+                         <table cellpadding="0" cellspacing="0" border="0" width="128">
+                            <tr>
+                                <td align="center">
+                                    <a href="https://www.moonconnection.com" target="_blank">
+                                        <img src="https://www.moonmodule.com/cs/dm/vs.gif" width="128" height="196" border="0" alt="" />
+                                    </a>
+                                    <div style="position:relative;width:128px;">
+                                        <div style="position:absolute;top:-20px;left:6px;background:#000000;width:116px;text-align:center;">
+                                            <a href="https://www.moonconnection.com/moon_phases.phtml" target="mc_moon_ph"><font color="#7F7F7F" size="1" face="arial,helvetica,sans-serif"><span style="color:#7F7F7F;font-family:arial,helvetica,sans-serif;font-size:10px;">moon phase info</span></font></a></div></div></td></tr></table><!-- // end moon phase HTML // -->
+                     </div>
                 </aside>
             </div>
-            <footer id="footer" style="margin-top: 10px;">
-                <img src="imagens/footer/flagbrasil.gif" alt="Bandeira do brasil">
-                <a href="https://www.firefox.com" target="_blank">
-                    <img src="imagens/footer/anythingbut.gif" alt="firefoxXD">
-                </a>
-                <img src="imagens/footer/mccoffee.gif" alt="mccoffe">
-                <img src="imagens/footer/mcspace.gif" alt="mcspace">
-                <img src="imagens/footer/miku.gif" alt="">
-
-
-                <a href="https://neocities.org/" target="_blank"><img src="imagens/footer/neocities.gif" alt="Neocities"></a> 
-            </footer>
+            <footer-info></footer-info>
         </div>
+        <script src="script.js"></script>
 </body>
 </html>

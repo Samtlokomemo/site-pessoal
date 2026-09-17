@@ -90,12 +90,14 @@ EXCEPT for the navigation */
     font-weight: bold;
     /* if you want to remove the underline
 you can add a line below here that says:
-text-decoration:none; */
+ */
+    text-decoration:none;
 }
 
 #header {
     width: 100%;
     background-color: #5e4e8c;
+    z-index: 2;
     /* header color here! */
     height: 150px;
     /* this is only for a background image! */
@@ -107,8 +109,10 @@ you can add them directly to the <div id="header"></div> element! */
 
 /* navigation section!! */
 #navbar {
+    position: relative;
     height: 40px;
     background-color: #13092D;
+    z-index: 2;
     /* navbar color */
     width: 100%;
 }
@@ -209,7 +213,7 @@ strong {
 /* this is just a cool box, it's the darker colored one */
 .box {
     background-color: #13092D;
-    border: 1px solid #ED64F5;
+    border: 1px dashed #ED64F5;
     padding: 10px;
 }
 
@@ -262,3 +266,84 @@ feel free to play around with the order!
         flex-wrap: wrap;
     }
 }
+
+/* Blog */
+#blogPost{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 20em;
+    background-color: #13092D;
+    border: 1px dashed #ED64F5;
+    padding: 5px 10px;
+    
+}
+
+
+
+
+/* Ping Pong Lists*/
+.pingPongContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+.pingPongItem{
+    padding: 5px;
+}
+
+:nth-child(odd){
+    align-self: flex-start;
+}
+
+.pingPongItem:nth-child(even){
+    align-self: flex-end;
+}
+
+
+
+/* Float Elements */
+.orbitingElement {
+    animation-name: orbitElementAnim;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes orbitElementAnim {
+    from{
+        left: -25px;
+        top: -12px;
+        z-index: 1;
+        transform: scale(0.75);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        left: 40px;
+        top: 0px;
+        z-index: 1;
+        transform: scale(0.75);
+    }
+    55%{
+        z-index:-1;
+    }
+    75%{
+        transform: scale(0.5);
+    }
+    90%{
+        z-index: -1;
+    }
+    to{
+        left: -25px;
+        top: -12px;
+        z-index: 1;
+        transform: scale(0.75);
+    }
+}
+
+

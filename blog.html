@@ -9,51 +9,57 @@
 </head>
 <body>
         <div id="container">
-            <div id="header" style="height: 152px;">
-
-            </div>
-            <div id="headerArea">
-                <nav id="navbar" style="margin-bottom: 10px;">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="gamedev.html">Gamedev</a></li>
-                        <li><a href="https://backloggd.com/u/Samtlokomemo/" target="_blank">Backloggd</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <header-info></header-info>
 
             <div id="flex">
                 <main>
-                   <div class="box">
-                        <h2>15/09 | Primeiro dia :)</h2>
-                        <p>Ainda testando e aprendendo muita coisa, mas no futuro talvez esse site fique mais legal!</p>
-                        <p>Foto do site atualmente:</p>
-                        <img src="imagens/site_1509.png" alt="Site Atual" style="width: 100%; max-width: 600px; height: auto;">
-                   </div>
+                    <img src="https://pixelsafari.neocities.org/misc/userbox/nightsky.jpg" alt="userbox" style="text-align: center;">
+                    <div id="blogPost">
+                        <h2>16/09 | Atualizando a página do blog</h2>
+                        <p><s>Descobri algumas coisas interessantes, como finalmente colocar o player de mp3.</s> Não da pra dar upload do mp3 aqui :(</p>
+                        <p>Talvez eu ainda pesquise hoje como deixar essa parte de "blog" mais bonita e funcional, com os posts sendo realmente posts ao invés de só um monte de texto um em cima do outro XD.</p>
+                        <p>Coisas que eu ainda quero colocar: Mouse personalizado, fazer o botão do site, colocar aqueles botão de feeling</p>
+                    </div>
+
+                    <div id="blogPost">
+                            <h2>15/09 | Primeiro dia :)</h2>
+                            <p>Ainda testando e aprendendo muita coisa, mas no futuro talvez esse site fique mais legal!</p>
+                            <p>Foto do site atualmente:</p>
+                            <img src="imagens/site_1509.png" alt="Site Atual" style="width: 100%; max-width: 600px; height: auto;">
+                    </div>
                 </main>
-                
-                <aside id="rightSidebar" style="margin-left: 10px;">
-                    <img src="https://pixelsafari.neocities.org/text/onlinefishbowl.gif" alt="online">
-                    <p>TODO: PLAYER DE MUSICA</p>
-                </aside>
+
                 <aside id="leftSidebar" style="margin-right: 10px;">
-                    <img src="https://pixelsafari.neocities.org/misc/userbox/nightsky.jpg" alt="userbox" style="width: 100%; max-width: 200px; height: auto;">
+
+                    <section id="ONLINE" style="text-align: center; width: 100%; height: auto;">
+                        <img src="https://pixelsafari.neocities.org/text/onlinefishbowl.gif" alt="online">
+                    </section>
+
+                    <section id="MUSICA">
+                        <p style="text-align: center; font-size: 0.8em;">
+                            Tocando: <br>
+                            <a href="https://youtu.be/RRKJiM9Njr8?si=axvapBCq_DVHRQZ_" target="_blank" style="text-shadow: 1px 1px 1px rgb(55, 50, 156);">Welcome to the black parade My Chemical Romance</a>  
+                        </p>
+                        <audio controls="" loop="" style="background-color: #ED64F5; border-radius: 90px; width: 100%; height: 30px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 5px;">
+                            <source src="musica.mp3" type="audio/mpeg">
+                        </audio>
+                    </section>
+
+                    
+                    
+                    <section class="pingPongContainer">
+                        <img class="pingPongItem" src="https://pixelsafari.neocities.org/stamps/more/2010.png" alt="isup2010">
+                        <img class="pingPongItem" src="https://pixelsafari.neocities.org/stamps/htmlsucks.png" alt="htmlsucks">
+                        <img class="pingPongItem" src="https://pixelsafari.neocities.org/stamps/more/2004.png" alt="2004">
+                        <img class="pingPongItem" src="https://pixelsafari.neocities.org/stamps/more/caramel.gif" alt="carameldance">
+                    </section>
+
+
                 </aside>
             </div>
 
-            <footer id="footer" style="margin-top: 10px;">
-                <img src="imagens/footer/flagbrasil.gif" alt="Bandeira do brasil">
-                <a href="https://www.firefox.com" target="_blank">
-                    <img src="imagens/footer/anythingbut.gif" alt="firefoxXD">
-                </a>
-                <img src="imagens/footer/mccoffee.gif" alt="mccoffe">
-                <img src="imagens/footer/mcspace.gif" alt="mcspace">
-                <img src="imagens/footer/miku.gif" alt="">
-
-
-                <a href="https://neocities.org/" target="_blank"><img src="imagens/footer/neocities.gif" alt="Neocities"></a> 
-            </footer>
+            <footer-info></footer-info>
         </div>
+        <script src="script.js"></script>
 </body>
 </html>
