@@ -198,6 +198,7 @@ footer {
 h1,
 h2,
 h3 {
+    text-align: center;
     color: #ED64F5;
 }
 
@@ -271,15 +272,12 @@ feel free to play around with the order!
 #blogPost{
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 20em;
+    height: 43em;
     background-color: #13092D;
     border: 1px dashed #ED64F5;
     padding: 5px 10px;
     
 }
-
-
-
 
 /* Ping Pong Lists*/
 .pingPongContainer{
