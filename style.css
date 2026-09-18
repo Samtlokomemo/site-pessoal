@@ -156,6 +156,8 @@ create styles for #leftSidebar and #rightSidebar */
 aside {
     background-color: #241445;
     width: 200px;
+    max-width: 200px;
+    margin: 5px;
     padding: 20px;
     font-size: smaller;
     /* this makes the sidebar text slightly smaller */
@@ -168,6 +170,8 @@ main {
     background-color: #43256E;
     flex: 1;
     padding: 20px;
+    margin: 5px;
+    height: 43em;
     order: 2;
 }
 

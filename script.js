@@ -14,8 +14,11 @@ class FooterInfo extends HTMLElement {
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="https://pixelsafari.neocities.org/buttons/3no.png" alt="naoclica"></a>
                 <a href="https://samtlokomemo.atabook.org/" target="_blank"><img src="https://pixelsafari.neocities.org/buttons/signguest.gif" alt="guestbook"></a>          
                 <a href="https://scripted.neocities.org/" target="_blank"><img src="https://scripted.neocities.org/SCRIPTED-BUTTON.gif" alt="scripted"></a>
-
+                <img src="https://cyber.dabamos.de/88x31/keep.gif" alt="fvckweb3">
             </marquee>
+        </footer>
+        <footer>
+            Samtlokomemo © 2026
         </footer>
         `;
     }
