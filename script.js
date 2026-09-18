@@ -12,7 +12,9 @@ class FooterInfo extends HTMLElement {
                 <a href="https://dcavederps.neocities.org/" target="_blank"><img src="https://dcavederps.neocities.org/staticFiles/images/buttons/dcaveDerpsModernButton.gif" alt="dcavederpbutton"></a>
                 <a href="https://daikonet.neocities.org/" target="_blank" style="display: inline-block;"><img src="https://daikonet.neocities.org/img/daikonet4.gif" alt="daikonetbutton"></a>
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="https://pixelsafari.neocities.org/buttons/3no.png" alt="naoclica"></a>
-                <img src="https://pixelsafari.neocities.org/buttons/signguest.gif" alt="guestbook">              
+                <a href="https://samtlokomemo.atabook.org/" target="_blank"><img src="https://pixelsafari.neocities.org/buttons/signguest.gif" alt="guestbook"></a>          
+                <a href="https://scripted.neocities.org/" target="_blank"><img src="https://scripted.neocities.org/SCRIPTED-BUTTON.gif" alt="scripted"></a>
+
             </marquee>
         </footer>
         `;
